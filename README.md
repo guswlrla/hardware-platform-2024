@@ -20,7 +20,7 @@
 	- 전압차로 인해 **전류는 높은 곳(5v)에서 낮은 곳(0v)에서 흐름**
 		- GND(기준전압)의 역할 : 전류를 모이게 함(모든 전류는 GND로 흐름)
 		- 예를 들어, 21번 핀을 키려면 LOW을 걸어줘야 함(5v -> 0v로 흐르도록 전압차를 줌) HIGH를 준다면 전압차가 없어서 안켜짐!
-		
+
 <hr/>
 
 2. GPIO모둘 기본함수
@@ -40,6 +40,8 @@
 	- 시간지연 함수
 		- time.sleep(secs)
 
+<hr/>
+
 3. 풀업(Pull-Up)저항과 풀다운(Pull-Down)저항
 
 	- 플로팅 상태를 방지하기 위해 풀업 저항과 풀다운 저항 사용
@@ -54,6 +56,8 @@
 
 		![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
 
+<hr/>
+
 4. GPIO 인터럽트(Interrupt) 사용
 
 - 인터럽트 : 우선순위, 기존에 CPU에서 처리하던 프로그램을 중단하고 인터럽트를 요청한 프로그램으로 실행 제어권을 넘기는 것
@@ -61,6 +65,8 @@
 	- 상태 : RISING/FALLING/BOTH
 - event_detected(핀번호)
 - add_event_detect(핀번호, 상태, callback=함수명, bouncetime=숫자)
+
+<hr/>
 
 5. pwm
 
