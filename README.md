@@ -2,7 +2,7 @@
 :fire:IoT 개발자과정 오픈 하드웨어 플랫폼활용 리포지토리:rocket:
 
 ## 1일차
-#### 라즈베리파이 기초
+1. 라즈베리파이 기초
 
 	- 물리적인 핀번호(핀배열번호)와 실질적인 핀번호는 다르기 때문에 주의!
 
@@ -52,7 +52,9 @@
 
 		![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
 
-4. 인터럽트
+4. GPIO 인터럽트(Interrupt) 사용
+- 인터럽트 : 우선순위, 기존에 CPU에서 처리하던 프로그램을 중단하고 인터럽트를 요청한 프로그램으로 실행 제어권을 넘기는 것
+- 함수
 
 
 
