@@ -46,15 +46,15 @@
 
 	- 플로팅 상태를 방지하기 위해 풀업 저항과 풀다운 저항 사용
 		- 플로팅(Floating) : LOW인지 HIGH인지 알 수 없는 상태, 0과 1이 번갈아 나타나는 불안정한 상태
-	- >풀업저항
-		- **저항을 VCC(전원) 쪽에 걸어** 입력을 받지 않은 상태일 때 HIGH로 끌어올리고, 입력을 받았을 때는 LOW로 끌어내리는 회로
+	>- 풀업저항
+	>	- **저항을 VCC(전원) 쪽에 걸어** 입력을 받지 않은 상태일 때 HIGH로 끌어올리고, 입력을 받았을 때는 LOW로 끌어내리는 회로
 
-			![풀업](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-up.png)
+	>		![풀업](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-up.png)
 
-	- 풀다운저항
-		- **저항을 GND(접지) 쪽에 걸어** 입력을 받지 않은 상태일 때 LOW로 끌어내리고, 입력을 받았을 때는 HIGH으로 끌어올리는 회로
+	>- 풀다운저항
+	>	- **저항을 GND(접지) 쪽에 걸어** 입력을 받지 않은 상태일 때 LOW로 끌어내리고, 입력을 받았을 때는 HIGH으로 끌어올리는 회로
 
-			![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
+	>		![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
 
 <hr/>
 
