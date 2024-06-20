@@ -73,7 +73,7 @@
 - PWM(Pulse Width Modulation) : 펄스 폭을 제어해서 디지털 신호를 아날로그 신호처럼 동작하도록 하는 기능
 - Duty : 한 주기 안에서 신호가 on 되어있는 비율
 - Duty Cycle : 주기에 대한 on/off 시간의 비
-	- Duty Cycle이 50%이면 2.5v의 효과를 낼 수 있음
+	- 예를들어, Duty Cycle이 50%이면 2.5v의 효과를 낼 수 있음
 - PWM 객체 생성
 	- 객체 = GPIO.PWM(핀번호, 주파수)
 		- 주파수 : Hz단위의 주파수로 0보다 큰 값 입력
@@ -81,7 +81,7 @@
 	- 객체.start(duty비)
 		- duty비 : Duty Cycle %단위로서의 0~100 사이 숫자 입력
 - 객체.ChangeFreqeuncy(주파수)
-- [ ]인터럽트랑 스위치 파일 수정!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+- [ ]인터럽트랑 스위치 파일 수정!
 
 ## :white_check_mark:2일차
 1. ㅇㅅㅇ
