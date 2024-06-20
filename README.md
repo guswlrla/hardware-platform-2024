@@ -49,12 +49,12 @@
 	- 풀업저항
 		- **저항을 VCC(전원) 쪽에 걸어** 입력을 받지 않은 상태일 때 HIGH로 끌어올리고, 입력을 받았을 때는 LOW로 끌어내리는 회로
 
-		![풀업](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-up.png)
+			![풀업](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-up.png)
 
 	- 풀다운저항
 		- **저항을 GND(접지) 쪽에 걸어** 입력을 받지 않은 상태일 때 LOW로 끌어내리고, 입력을 받았을 때는 HIGH으로 끌어올리는 회로
 
-		![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
+			![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
 
 <hr/>
 
