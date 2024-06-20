@@ -12,7 +12,7 @@ Buzz = GPIO.PWM(piezo, 440)
 try:
 	while True:
 		Buzz.start(20)
-		a = input("입력(1~8) : ")
+		a = int(input("입력(1~8) : "))
 		if a == 1:
 			Buzz.ChangeFrequency(melody[0])
 		elif a == 2:
