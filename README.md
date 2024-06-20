@@ -43,7 +43,7 @@ IoT 개발자과정 오픈 하드웨어 플랫폼활용 리포지토리
 		- 저항을 GND(접지) 쪽에 걸어 입력을 받지 않은 상태일 때 LOW로 끌어내리고, 입력을 받았을 때는 HIGH으로 끌어올리는 회로
 		![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
 
-
+- 
 
 
 GPIO.PWM 함수도 찾아보고 적기!!
