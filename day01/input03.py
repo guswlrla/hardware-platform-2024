@@ -11,23 +11,30 @@ Buzz = GPIO.PWM(piezo, 440)
 
 try:
 	while True:
-		Buzz.start(20)
 		a = int(input("입력(1~8) : "))
 		if a == 1:
+			Buzz.start(20)
 			Buzz.ChangeFrequency(melody[0])
 		elif a == 2:
+			Buzz.start(20)
 			Buzz.ChangeFrequency(melody[1])
 		elif a == 3:
+			Buzz.start(20)
 			Buzz.ChangeFrequency(melody[2])
 		elif a == 4:
-		 Buzz.ChangeFrequency(melody[3])
+			Buzz.start(20)
+			Buzz.ChangeFrequency(melody[3])
 		elif a == 5:
+			Buzz.start(20)
 			Buzz.ChangeFrequency(melody[4])
 		elif a == 6:
+			Buzz.start(20)
 			Buzz.ChangeFrequency(melody[5])
 		elif a == 7:
+			Buzz.start(20)
 			Buzz.ChangeFrequency(melody[6])
 		elif a == 8:
+			Buzz.start(20)
 			Buzz.ChangeFrequency(melody[7])
 		else:
 			print("정확한 값 입력!")
