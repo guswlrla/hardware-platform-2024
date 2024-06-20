@@ -53,16 +53,19 @@
 		![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
 
 4. GPIO 인터럽트(Interrupt) 사용
-- 인터럽트 : 우선순위, 기존에 CPU에서 처리하던 프로그램을 중단하고 인터럽트를 요청한 프로그램으로 실행 제어권을 넘기는 것
-- 함수
 
+- 인터럽트 : 우선순위, 기존에 CPU에서 처리하던 프로그램을 중단하고 인터럽트를 요청한 프로그램으로 실행 제어권을 넘기는 것
+- wait_for_edge(핀번호, GPIO.상태)
+	- 상태 : RISING/FALLING/BOTH
+- event_detected(핀번호)
+- add_event_detect(핀번호, 상태, callback=함수명, bouncetime=숫자)
+
+5. pwm
 
 
 GPIO.PWM 함수도 찾아보고 적기!!
 ----------------------------------------------------------------------------------------------------------------------------------
 
-
-인터럽트 = 우선순위
 
 pwm - 펄스 폭을 제어해서 ?? 어쩌구,, 
 duty = on 되는 시간
