@@ -2,11 +2,11 @@
 :fire:IoT 개발자과정 오픈 하드웨어 플랫폼활용 리포지토리:rocket:
 
 ## :white_check_mark:1일차
-1. 라즈베리파이 기초
+### 1. 라즈베리파이 기초
 
-	- 물리적인 핀번호(핀배열번호)와 실질적인 핀번호는 다르기 때문에 주의!
+- 물리적인 핀번호(핀배열번호)와 실질적인 핀번호는 다르기 때문에 주의!
 
-		![rpi핀맵](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/gpio.png)
+	![rpi핀맵](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/gpio.png)
 
 	- 각 GPIO핀에는 레지스터가 있는데 해당 레지스터에 HIGH/LOW 값을 줄 수 있음
 		- HIGH(5v=VCC), LOW(0v=GND)
