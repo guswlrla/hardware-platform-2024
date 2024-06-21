@@ -89,7 +89,7 @@
 	- python -m venv [가상환경이름]
 	- source ./[가상환경이름]/bin/activate : 가상환경접속
 	- deactivate : 가상환경 빠져나오기
-
+<hr/>
 2. 
 	- sudo git clone https://github.com/WiringPi/WiringPi
 	- cd WiringPi
