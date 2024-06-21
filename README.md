@@ -42,7 +42,7 @@
 
 <hr/>
 
-3. 풀업(Pull-Up)저항과 풀다운(Pull-Down)저항
+3. 풀업(Pull-Up)저항과 풀다운(Pull-Down)저항 with.스위치
 
 	- 플로팅 상태를 방지하기 위해 풀업 저항과 풀다운 저항 사용
 		- 플로팅(Floating) : LOW인지 HIGH인지 알 수 없는 상태, 0과 1이 번갈아 나타나는 불안정한 상태
@@ -68,7 +68,7 @@
 
 <hr/>
 
-5. GPIO PWM 제어
+5. GPIO PWM 제어 with.피에조부저
 
 - PWM(Pulse Width Modulation) : 펄스 폭을 제어해서 디지털 신호를 아날로그 신호처럼 동작하도록 하는 기능
 - Duty : 한 주기 안에서 신호가 on 되어있는 비율
@@ -84,11 +84,20 @@
 - [ ]인터럽트랑 스위치 파일 수정!
 
 ## :white_check_mark:2일차
-1. ㅇㅅㅇ
 
+1. 파이썬 가상환경 설정
+	- python -m venv [가상환경이름]
+	- source ./[가상환경이름]/bin/activate : 가상환경접속
+	- deactivate : 가상환경 빠져나오기
 
+2. 
+	- sudo git clone https://github.com/WiringPi/WiringPi
+	- cd WiringPi
+	- sudo ./build
+	- gpio -v
+	- gpio readall
 
-
+3. 초음파센서
 
 
 
