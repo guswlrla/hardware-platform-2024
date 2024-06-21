@@ -85,7 +85,6 @@
 	- python -m venv [가상환경이름]
 	- source ./[가상환경이름]/bin/activate : 가상환경접속
 	- deactivate : 가상환경 빠져나오기
-<hr/>
 
 2. 라즈베리파이 GPIO 확인
 	- sudo git clone https://github.com/WiringPi/WiringPi
@@ -93,7 +92,6 @@
 	- sudo ./build
 	- gpio -v
 	- gpio readall
-<hr/>
 
 3. 초음파센서 실습
 
