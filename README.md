@@ -20,7 +20,6 @@
 	- 전압차로 인해 **전류는 높은 곳(5v)에서 낮은 곳(0v)에서 흐름**
 		- GND(기준전압)의 역할 : 전류를 모이게 함(모든 전류는 GND로 흐름)
 		- 예를 들어, 21번 핀을 키려면 LOW을 걸어줘야 함(5v -> 0v로 흐르도록 전압차를 줌) HIGH를 준다면 전압차가 없어서 안켜짐!
-
 <hr/>
 
 2. GPIO모둘 기본함수
@@ -39,7 +38,6 @@
 			- channel : 핀번호, 반환값 : H/L or 1/0 or T/F
 	- 시간지연 함수
 		- time.sleep(secs)
-
 <hr/>
 
 3. 풀업(Pull-Up)저항과 풀다운(Pull-Down)저항 with.스위치
@@ -55,7 +53,6 @@
 		- **저항을 GND(접지) 쪽에 걸어** 입력을 받지 않은 상태일 때 LOW로 끌어내리고, 입력을 받았을 때는 HIGH으로 끌어올리는 회로
 
 			![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
-
 <hr/>
 
 4. GPIO 인터럽트(Interrupt) 사용
@@ -65,7 +62,6 @@
 	- 상태 : RISING/FALLING/BOTH
 - event_detected(핀번호)
 - add_event_detect(핀번호, 상태, callback=함수명, bouncetime=숫자)
-
 <hr/>
 
 5. GPIO PWM 제어 with.피에조부저
@@ -90,14 +86,16 @@
 	- source ./[가상환경이름]/bin/activate : 가상환경접속
 	- deactivate : 가상환경 빠져나오기
 <hr/>
-2. 
+
+2. 라즈베리파이 GPIO 확인
 	- sudo git clone https://github.com/WiringPi/WiringPi
 	- cd WiringPi
 	- sudo ./build
 	- gpio -v
 	- gpio readall
+<hr/>
 
-3. 초음파센서
+3. 초음파센서 실습
 
 
 
