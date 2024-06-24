@@ -12,8 +12,10 @@ GPIO.setup(g_pin, GPIO.OUT)
 GPIO.setup(b_pin, GPIO.OUT)
 GPIO.setup(switch, GPIO.IN)
 
+index = 0
+last_state = GPIO.input(switch)
+
 try:
-	i = 0
 	while True:
 		if GPIO.input(switch) == True:
 			if i == 1:
