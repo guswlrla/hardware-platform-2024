@@ -3,7 +3,6 @@
 
 ## :white_check_mark:1일차
 ### 1. 라즈베리파이 기초
-
 - 물리적인 핀번호(핀배열번호)와 실질적인 핀번호는 다르기 때문에 주의!	
 
 	![rpi핀맵](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/gpio.png)
