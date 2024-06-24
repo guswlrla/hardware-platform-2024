@@ -21,7 +21,6 @@
 	- 예를 들어, 21번 핀을 키려면 LOW을 걸어줘야 함(5v -> 0v로 흐르도록 전압차를 줌) HIGH를 준다면 전압차가 없어서 안켜짐!
 
 ### 2. GPIO모둘 기본함수
-
 - GPIO 설정함수
 	- GPIO.setmode(GPIO.BOARD) : 보드의 핀번호를 사용할 때
 	- GPIO.setmode(GPIO.BCM) : GPIO핀을 사용할 때
@@ -38,7 +37,6 @@
 	- time.sleep(secs)
 
 ### 3. 풀업(Pull-Up)저항과 풀다운(Pull-Down)저항 with.스위치
-
 - 플로팅 상태를 방지하기 위해 풀업 저항과 풀다운 저항 사용
 	- 플로팅(Floating) : LOW인지 HIGH인지 알 수 없는 상태, 0과 1이 번갈아 나타나는 불안정한 상태
 - 풀업저항
@@ -52,7 +50,6 @@
 		![풀다운](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/pull-down.png)
 
 ### 4. GPIO 인터럽트(Interrupt) 사용
-
 - 인터럽트 : 우선순위, 기존에 CPU에서 처리하던 프로그램을 중단하고 인터럽트를 요청한 프로그램으로 실행 제어권을 넘기는 것
 - wait_for_edge(핀번호, GPIO.상태)
 	- 상태 : RISING/FALLING/BOTH
@@ -60,7 +57,6 @@
 - add_event_detect(핀번호, 상태, callback=함수명, bouncetime=숫자)
 
 ### 5. GPIO PWM 제어 with.피에조부저
-
 - PWM(Pulse Width Modulation) : 펄스 폭을 제어해서 디지털 신호를 아날로그 신호처럼 동작하도록 하는 기능
 - Duty : 한 주기 안에서 신호가 on 되어있는 비율
 - Duty Cycle : 주기에 대한 on/off 시간의 비
@@ -75,7 +71,6 @@
 - [-]인터럽트랑 스위치 파일 수정!
 
 ## :white_check_mark:2일차
-
 ### 1. 파이썬 가상환경 설정
 - python -m venv [가상환경이름]
 - source ./[가상환경이름]/bin/activate : 가상환경접속
