@@ -162,8 +162,14 @@
 - 공통 캐소드형(Common Cathod)
 	- 각 led의 캐소드(-) 단자들이 공통으로 묶여있으므로 COM은 **gnd**에 연결
 	- 데이터 신호인 a~g, dp에 output값 1을 주면 불이 켜짐
+
+	![cathod](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/cathod.png)
+
 - 공통 애노드형(Common Anode)
 	- 각 led의 애노드(+) 단자들이 공통으로 묶여있으므로 COM은 **vcc**에 연결
 	- 데이터 신호인 a~g, dp에 output값 0을 주면 불이 켜짐
+
+	![anode](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/anode.png)
+
 - 외형으로 타입을 구분할 수 없으므로 데이터시트로 확인
 - 캐소드타입인지 애노드타입인지에 따라 16진수도 달라지고 회로도 달라짐
