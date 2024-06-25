@@ -150,7 +150,8 @@
 - 파일 실행시 사진 찍기
 - 스위치로 제어하여 사진이 찍고 시간?
 
-	[카메라](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/file.png)
+![cam](https://github.com/guswlrla/hardware-platform-2024/assets/158007465/c7524b60-b099-433a-948b-4bb9509e0158)
+
 
 ### 3. fnd 실습
 각 led에 이름(알파벳)이 이씅ㅁ
