@@ -158,7 +158,7 @@
 	- COM1 ~ COM4 : FND를 선택하는 단자
 	- 각각의 led a~g, dp 총 8개의 세그먼트 핀으로 구성
 
-	![제어화면](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/fnd.png)
+	![fnd](https://github.com/guswlrla/hardware-platform-2024/assets/158007465/d7abf930-6380-4f8c-8750-fcad9c87ebbc)
 
 - 
 
