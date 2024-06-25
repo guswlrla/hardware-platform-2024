@@ -107,7 +107,7 @@
 	- python -m venv --system-site-packages [가상환경이름]
 - flask 기본코드
 	- port : 포트번호 수정
-	- debug=True : 코드수정마다 flask 변경된 걸 인식하고 다시 시작
+	- debug=True : 코드 수정마다 flask 변경된 걸 인식하고 다시 시작
 
 	```python
 	from flask import Flask
@@ -138,3 +138,12 @@
 ### 1. flask 웹서버 led 제어
 ### 2. 카메라,,,
 ### 3. 버튼으로 카메라 제어
+### 4. fnd
+각 led에 이름(알파벳)이 이씅ㅁ
+com1,2,3,4-fnd를 선택하는 단자, gnd랑 연결되어야 함
+a가 1이랑 연결되어 있을때 output값은 1을 줘야함(회로를 보면 led가 아래방향으로 가있음), 전류가 흐를려면 high를 줘야겟죠
+- 음극이 공통 = common cathod?
+- led 방향이 위로 가있으면 a라는 led에 불을 킬 떄 output 값을 low로 줘야함, com은 vcc로 줘야겟죠? 양극이 공통 = common 애노드..~
+- 양극이 공통인지, 음극이 공통인지에 따라 16진수도 달라지고 회로도 달라짐
+21~25 6~29
+com1 -> gnd, dp에 3.3v 연결 => 난 커먼 캐소드타입
