@@ -149,12 +149,21 @@
 ### 2. 카메라모듈 실습
 - 파일 실행시 사진 찍기
 - 스위치로 제어하여 사진이 찍고 시간?
-- 실행결과
+<!--- 실행결과
 
-	![cam](https://github.com/guswlrla/hardware-platform-2024/assets/158007465/c7524b60-b099-433a-948b-4bb9509e0158)
+	 ![cam](https://github.com/guswlrla/hardware-platform-2024/assets/158007465/c7524b60-b099-433a-948b-4bb9509e0158) -->
 
-### 3. FND 실습
-각 led에 이름(알파벳)이 이씅ㅁ
+### 3. FND(Flexible Numeric Display) 실습
+- 7개의 led를 이용하여 숫자나 문자를 표시하는 부품, 세븐세그먼트(7-Segment)라고도 부름
+- 구조와 외형
+	- COM1 ~ COM4 : FND를 선택하는 단자
+	- 각각의 led a~g, dp 총 8개의 세그먼트 핀으로 구성
+
+	![제어화면](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/fnd.png)
+
+- 
+
+
 com1,2,3,4-fnd를 선택하는 단자, gnd랑 연결되어야 함
 a가 1이랑 연결되어 있을때 output값은 1을 줘야함(회로를 보면 led가 아래방향으로 가있음), 전류가 흐를려면 high를 줘야겟죠
 - 음극이 공통 = common cathod?
