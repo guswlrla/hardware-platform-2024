@@ -104,7 +104,7 @@
 - 모터의 회전을 잘게 쪼개서 쪼갠 조각(스텝)을 이용해 제어하는 모터
 - 스텝모터 원리
 	- 전자석의 기능을 이용하여 로터(모터 회전축)를 돌리는 구조
-		![스텝모터](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/stepmoter.png) 
+		![스텝모터](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/moter.png) 
 
 
 ### 3. flask 웹서버 실행
