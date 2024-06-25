@@ -157,8 +157,8 @@
 	- COM1 ~ COM4 : FND를 선택하는 단자
 	- a~g핀, dp핀 : 각 7개의 led를 의미
 
-	![fnd](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/fnd.png)
-	 
+	![fnd](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/fnd2.png)
+
 - 공통 캐소드형(Common Cathod)
 	- 각 led의 캐소드(-) 단자들이 공통으로 묶여있으므로 COM은 **gnd**에 연결
 	- 데이터 신호인 a~g, dp에 output값 1을 주면 불이 켜짐
