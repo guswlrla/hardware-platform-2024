@@ -107,8 +107,10 @@
 - 기본적인 라이브러리 포함 가상환경
 	- python -m venv --system-site-packages [가상환경이름]
 - flask 기본코드
+	- port : 포트번호 수정
+	- debug=True : 코드수정마다 flask 변경된 걸 인식하고 다시 시작
 
-	```flask
+	```python
 	from flask import Flask
 	app = Flask(__name__)
 
@@ -117,11 +119,11 @@
 		return "Kim Hyeon Ji!"
 
 	if __name__ == "__main__":
-		app.run(host = "0.0.0.0", debug = True) # port : 포트번호 수정, debug=True : 코드수정마다 flask 변경된 걸 인식하고 다시 시작
+		app.run(host = "0.0.0.0", debug = True)
 	```
 - 정적라우팅
 
-	```정적라우팅
+	```python
 	from flask import Flask
 	app = Flask(__name__)
 
