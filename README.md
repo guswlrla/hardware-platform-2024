@@ -98,7 +98,7 @@
 		- NC(닫힌접점, normal close) : 평상시에 스위치가 닫혀있음, 릴레이에 전류가 흐르면 열림
 		- NO(열린접점, normal open) : 평상시에 스위치가 열려있음, 릴레이에 전류가 흐를 때 닫힘
 
-		![릴레이](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/relay.png)
+		![릴레이](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/relay.png) 
 
 ### 2. 스텝모터 실습
 
