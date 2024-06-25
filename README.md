@@ -154,19 +154,13 @@
 
 ### 3. FND(Flexible Numeric Display) 실습
 - 7개의 led를 이용하여 숫자나 문자를 표시하는 부품, 세븐세그먼트(7-Segment)라고도 부름
-- 구조와 외형
 	- COM1 ~ COM4 : FND를 선택하는 단자
-	- 각각의 led a~g, dp 총 8개의 세그먼트 핀으로 구성
-
-	![fnd](https://github.com/guswlrla/hardware-platform-2024/assets/158007465/d7abf930-6380-4f8c-8750-fcad9c87ebbc)
-
-- 
-
-
-com1,2,3,4-fnd를 선택하는 단자, gnd랑 연결되어야 함
-a가 1이랑 연결되어 있을때 output값은 1을 줘야함(회로를 보면 led가 아래방향으로 가있음), 전류가 흐를려면 high를 줘야겟죠
-- 음극이 공통 = common cathod?
-- led 방향이 위로 가있으면 a라는 led에 불을 킬 떄 output 값을 low로 줘야함, com은 vcc로 줘야겟죠? 양극이 공통 = common 애노드..~
-- 양극이 공통인지, 음극이 공통인지에 따라 16진수도 달라지고 회로도 달라짐
-21~25 6~29
-com1 -> gnd, dp에 3.3v 연결 => 난 커먼 캐소드타입
+	- a~g핀, dp핀 : 각 7개의 led를 의미
+- 공통 캐소드형(Common Cathod)
+	- 각 led의 캐소드(-) 단자들이 공통으로 묶여있으므로 COM은 **gnd**에 연결
+	- 데이터 신호인 a~g, dp에 output값 1을 주면 불이 켜짐
+- 공통 애노드형(Common Anode)
+	- 각 led의 애노드(+) 단자들이 공통으로 묶여있으므로 COM은 **vcc**에 연결
+	- 데이터 신호인 a~g, dp에 output값 0을 주면 불이 켜짐
+- 외형으로 타입을 구분할 수 없으므로 데이터시트로 확인
+- 캐소드타입인지 애노드타입인지에 따라 16진수도 달라지고 회로도 달라짐
