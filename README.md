@@ -114,7 +114,6 @@
 	- port : 포트번호 수정
 	- debug=True : 코드 수정마다 flask 변경된 걸 인식하고 다시 시작
 
-
 	```python
 	from flask import Flask
 	app = Flask(__name__)
