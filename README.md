@@ -104,6 +104,7 @@
 - 모터의 회전을 잘게 쪼개서 쪼갠 조각(스텝)을 이용해 제어하는 모터
 - 스텝모터 원리
 	- 전자석의 기능을 이용하여 로터(모터 회전축)를 돌리는 구조
+
 		![스텝모터](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/moter.png) 
 
 
@@ -140,9 +141,12 @@
 	- ?key=value&key=value 값으로 전달
 
 ## :white_check_mark:4일차
-### 1. flask 웹서버 led 제어
+### 1. flask 웹서버로 led 제어 <span style="font-size:50%">with.html</span>
+
 ### 2. 카메라,,,
+
 ### 3. 버튼으로 카메라 제어
+
 ### 4. fnd 실습
 각 led에 이름(알파벳)이 이씅ㅁ
 com1,2,3,4-fnd를 선택하는 단자, gnd랑 연결되어야 함
