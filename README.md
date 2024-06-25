@@ -90,8 +90,6 @@
 	- 초음파와 장애물간의 왕복 시간이므로 2를 나눠줘야 함
 		- 거리 = (시간 × 소리의 속도) / 2
 
-	![초음파센서](https://github.com/guswlrla/hardware-platform-2024/blob/main/images/sonic.PNG)
-
 ## :white_check_mark:3일차
 ### 1. 릴레이모듈 실습
 - 낮은 전압/전류를 이용해 더 높은 전압/전류를 제어하는 상황에 쓰임
