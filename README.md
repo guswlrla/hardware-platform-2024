@@ -141,7 +141,7 @@
 	- ?key=value&key=value 값으로 전달
 
 ## :white_check_mark:4일차
-### 1. flask 웹서버로 led 제어 <span style="font-size:50%">with.html</span>
+### 1. flask 웹서버로 led 제어 <span style="font-size:10%">with.html</span>
 
 ### 2. 카메라,,,
 
