@@ -107,7 +107,6 @@
 
 		![스텝모터](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/moter.png) 
 
-
 ### 3. flask 웹서버 실행
 - 기본적인 라이브러리 포함 가상환경
 	- python -m venv --system-site-packages [가상환경이름]
@@ -149,9 +148,9 @@
 ### 2. 카메라모듈 실습
 - 파일 실행시 사진 찍기
 - 스위치로 제어하여 사진이 찍고 시간?
-<!--- 실행결과
+- 실행결과
 
-	 ![cam](https://github.com/guswlrla/hardware-platform-2024/assets/158007465/c7524b60-b099-433a-948b-4bb9509e0158) -->
+	![cam](https://github.com/guswlrla/hardware-platform-2024/assets/158007465/c7524b60-b099-433a-948b-4bb9509e0158)
 
 ### 3. FND(Flexible Numeric Display) 실습
 - 7개의 led를 이용하여 숫자나 문자를 표시하는 부품, 세븐세그먼트(7-Segment)라고도 부름
