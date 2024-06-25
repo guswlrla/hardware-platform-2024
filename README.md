@@ -107,6 +107,7 @@
 - 기본적인 라이브러리 포함 가상환경
 	- python -m venv --system-site-packages [가상환경이름]
 - flask 기본코드
+
 	```flask
 	from flask import Flask
 	app = Flask(__name__)
@@ -116,14 +117,29 @@
 		return "Kim Hyeon Ji!"
 
 	if __name__ == "__main__":
-		app.run(host = "0.0.0.0", debug = True)
+		app.run(host = "0.0.0.0", debug = True) # port : 포트번호 수정, debug=True : 코드수정마다 flask 변경된 걸 인식하고 다시 시작
+	```
+- 정적라우팅
+
+	```정적라우팅
+	from flask import Flask
+	app = Flask(__name__)
+
+	@app.route("/")
+	def hello():
+		return "Hello World!"
+
+	@app.route("/name")
+	def name():
+		return "<h1>My name is Kim Hyeon Ji!!</h1>"
+
+	@app.route("/age")
+	def age():
+		return "<h1> 24 years old</h1>"
+
+	if __name__ == "__main__":
+		app.run(host = "0.0.0.0", port = "10011", debug = True)
 	```
 
-<!-- debug = True : 
-port = "포트번호" : 포트번호 수정
-
-라우팅 기본코드 좌라락
-정적라우팅 코드 좌라락
-
-?이름=홍길동&주소=서울 -> 의미알기, 이 형태로 전달해야한다,, 대충 이런 내용인듯 키벨류~
+ <!-- ?이름=홍길동&주소=서울-> 의미알기, 이 형태로 전달해야한다,, 대충 이런 내용인듯 키벨류~
 이름이랑 주소는 key -->
