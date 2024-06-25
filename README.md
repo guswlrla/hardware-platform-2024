@@ -80,7 +80,6 @@
 - sudo git clone https://github.com/WiringPi/WiringPi
 - cd WiringPi
 - sudo ./build
-- gpio -v
 - gpio readall
 - 채널이 사용중이라고 뜰 때, GPIO 핀을 확인해서 해당되는 핀을 1로 설정!
 
@@ -119,7 +118,7 @@
 		return "Kim Hyeon Ji!"
 
 	if __name__ == "__main__":
-		app.run(host = "0.0.0.0", debug = True)
+		app.run(host = "0.0.0.0", port = "10011", debug = True)
 	```
 - 정적라우팅
 
