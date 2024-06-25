@@ -123,13 +123,6 @@
 - 정적라우팅
 
 	```python
-	from flask import Flask
-	app = Flask(__name__)
-
-	@app.route("/")
-	def hello():
-		return "Hello World!"
-
 	@app.route("/name")
 	def name():
 		return "<h1>My name is Kim Hyeon Ji!!</h1>"
@@ -137,10 +130,11 @@
 	@app.route("/age")
 	def age():
 		return "<h1> 24 years old</h1>"
-
-	if __name__ == "__main__":
-		app.run(host = "0.0.0.0", port = "10011", debug = True)
 	```
+- get방식 파라미터 전달
+	- ?key=value&key=value 값으로 전달
 
- <!-- ?이름=홍길동&주소=서울-> 의미알기, 이 형태로 전달해야한다,, 대충 이런 내용인듯 키벨류~
-이름이랑 주소는 key -->
+## :white_check_mark:4일차
+### 1. flask 웹서버 led 제어
+### 2. 카메라,,,
+### 3. 버튼으로 카메라 제어
