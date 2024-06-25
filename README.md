@@ -140,19 +140,7 @@
 	- ?key=value&key=value 값으로 전달
 
 ## :white_check_mark:4일차
-### 1. 웹서버로 led 제어
-- html로 구성한 flask 웹서버 화면으로 led 제어
-
-	<!-- ![제어화면](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/moter.png) -->
-
-### 2. 카메라모듈 실습
-- 파일 실행시 사진 찍기
-- 스위치로 제어하여 사진이 찍고 시간?
-<!--- 실행결과
-
-	 ![cam](https://github.com/guswlrla/hardware-platform-2024/assets/158007465/c7524b60-b099-433a-948b-4bb9509e0158) -->
-
-### 3. FND(Flexible Numeric Display) 실습
+### 1. FND(Flexible Numeric Display) 실습
 - 7개의 led를 이용하여 숫자나 문자를 표시하는 부품, 세븐세그먼트(7-Segment)라고도 부름
 	- COM1 ~ COM4 : FND를 선택하는 단자
 	- a~g핀, dp핀 : 각 7개의 led를 의미
@@ -170,3 +158,6 @@
 
 - 외형으로 타입을 구분할 수 없으므로 데이터시트로 확인
 - 캐소드타입인지 애노드타입인지에 따라 16진수도 달라지고 회로도 달라짐
+
+## :white_check_mark:5일차
+### 1. 정리 개빡세네
