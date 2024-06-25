@@ -141,13 +141,18 @@
 	- ?key=value&key=value 값으로 전달
 
 ## :white_check_mark:4일차
-### 1. flask 웹서버로 led 제어 <span style=font-size:5px>with.html</span> 
+### 1. 웹서버로 led 제어
+- html로 구성한 flask 웹서버 화면으로 led 제어
 
-### 2. 카메라,,,
+	<!-- ![제어화면](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/moter.png) -->
 
-### 3. 버튼으로 카메라 제어
+### 2. 카메라모듈 실습
+- 파일 실행시 사진 찍기
+- 스위치로 제어하여 사진이 찍고 시간?
 
-### 4. fnd 실습
+[카메라](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/cam.jpg)
+
+### 3. fnd 실습
 각 led에 이름(알파벳)이 이씅ㅁ
 com1,2,3,4-fnd를 선택하는 단자, gnd랑 연결되어야 함
 a가 1이랑 연결되어 있을때 output값은 1을 줘야함(회로를 보면 led가 아래방향으로 가있음), 전류가 흐를려면 high를 줘야겟죠
