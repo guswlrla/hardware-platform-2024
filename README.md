@@ -103,14 +103,27 @@
 
 ### 2. 스텝모터 실습
 
-### 3. flask? 웹서버
-기본적인 라이브러리 포함 가상환경
-python -m venv --system-site-packages [가상환경이름]
-debug = True : 
+### 3. flask 웹서버 실행
+- 기본적인 라이브러리 포함 가상환경
+	- python -m venv --system-site-packages [가상환경이름]
+- flask 기본코드
+	```flask
+	from flask import Flask
+	app = Flask(__name__)
+
+	@app.route("/")
+	def hello():
+		return "Kim Hyeon Ji!"
+
+	if __name__ == "__main__":
+		app.run(host = "0.0.0.0", debug = True)
+	```
+
+<!-- debug = True : 
 port = "포트번호" : 포트번호 수정
 
 라우팅 기본코드 좌라락
 정적라우팅 코드 좌라락
 
 ?이름=홍길동&주소=서울 -> 의미알기, 이 형태로 전달해야한다,, 대충 이런 내용인듯 키벨류~
-이름이랑 주소는 key
+이름이랑 주소는 key -->
