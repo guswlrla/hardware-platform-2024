@@ -24,7 +24,8 @@ try:
 				count = 0
 
 			for i in range(0, 7):
-				GPIO.output(led[i], num[])
-				
+				GPIO.output(led[i], num[count][i])
+			time.sleep(0.3)
+
 except KeyboardInterrupt:
 	GPIO.cleanup()
