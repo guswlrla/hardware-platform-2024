@@ -9,13 +9,13 @@ count = 0
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(switch, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 
-for ledPin in led:
-	GPIO.setup(ledPin, GPIO.OUT)
-	GPIO.output(ledPin, False)
+for i in led:
+	GPIO.setup(i, GPIO.OUT)
+	GPIO.output(i, 0)
 
-for digitPin in digit:
-	GPIO.setup(digitPin, GPIO.OUT)
-	GPIO.output(digitPin, False) # 꺼짐
+for j in digit:
+	GPIO.setup(j, GPIO.OUT)
+	GPIO.output(j, 0) # 꺼짐
 
 num = [[1,1,1,1,1,1,0],[0,1,1,0,0,0,0],[1,1,0,1,1,0,1],[1,1,1,1,0,0,1],
 				[0,1,1,0,0,1,1],[1,0,1,1,0,1,1],[1,0,1,1,1,1,1],
@@ -23,7 +23,7 @@ num = [[1,1,1,1,1,1,0],[0,1,1,0,0,0,0],[1,1,0,1,1,0,1],[1,1,1,1,0,0,1],
 
 try:
 	while True:
-		if GPIO.input(switch) == True:
+		if GPIO.input(switch) == 1:
 			count += 1
 			fnd = [0,0,0,0]
 			fnd[0] = int(count / 1000)
