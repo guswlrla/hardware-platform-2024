@@ -34,9 +34,9 @@ GPIO.setup(swPin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 def display_digit(number, digit_index):
 	for loop in range(7):
 		GPIO.output(seg[loop], segment[number][loop])
-		GPIO.output(digits[digit_index], 0)
-		time.sleep(0.005)
-		GPIO.output(digits[digit_index], 1)
+	GPIO.output(digits[digit_index], 0)
+	time.sleep(0.005)
+	GPIO.output(digits[digit_index], 1)
 
 def display_number(number):
 	thousands = number // 1000
@@ -51,14 +51,14 @@ def display_number(number):
 		display_digit(ones, 3)
 
 try:
-	count = -1
+	count = 0
 	while True:
 		if GPIO.input(swPin) == False:
 			time.sleep(0.01)
 			if GPIO.input(swPin) == False:
 				count = (count + 1) % 10000
 				print("Display number:", count)
-				while GPIO.input(swPin) == GPIO.LOW:
+				while GPIO.input(swPin) == False:
 					time.sleep(0.1)
 
 			display_number(count)
