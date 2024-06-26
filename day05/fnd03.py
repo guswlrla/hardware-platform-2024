@@ -4,18 +4,20 @@ import time
 led = [21, 22, 23, 24, 25, 6, 12]
 digit = [13, 19, 5, 17]
 switch = 26
-count = 0
+oldSw = 0
+newSw = 0
+index = [0,0,0,0]
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(switch, GPIO.IN, pull_up_down = GPIO.PUD_DOWN)
 
-for i in led:
-	GPIO.setup(i, GPIO.OUT)
-	GPIO.output(i, 0)
+for a in led:
+	GPIO.setup(a, GPIO.OUT)
+	GPIO.output(a, 0)
 
-for j in digit:
-	GPIO.setup(j, GPIO.OUT)
-	GPIO.output(j, 0) # 꺼짐
+for b in digit:
+	GPIO.setup(b, GPIO.OUT)
+	GPIO.output(b, 1)
 
 num = [[1,1,1,1,1,1,0],[0,1,1,0,0,0,0],[1,1,0,1,1,0,1],[1,1,1,1,0,0,1],
 				[0,1,1,0,0,1,1],[1,0,1,1,0,1,1],[1,0,1,1,1,1,1],
@@ -23,21 +25,29 @@ num = [[1,1,1,1,1,1,0],[0,1,1,0,0,0,0],[1,1,0,1,1,0,1],[1,1,1,1,0,0,1],
 
 try:
 	while True:
-		if GPIO.input(switch) == 1:
-			count += 1
-			fnd = [0,0,0,0]
-			fnd[0] = int(count / 1000)
-			fnd[1] = int(count / 100)
-			fnd[2] = int(count / 10)
-			fnd[3] = int(count / 1)
-			if count == 10:
-				count = 0
-			for j in range(4):
-				for i in range(7):
-					GPIO.output(led[i], num[count][i])
-				GPIO.output(digit[j], False)
-				time.sleep(0.005)
-				GPIO.output(digit[j], True)
-				
+		newSw = GPIO.input(switch)
+
+		for i in range(4):
+			for j in range(7):
+				GPIO.output(led[j], num[index[i]][j])
+			GPIO.output(digit[i], 0)
+			time.sleep(0.001)
+			GPIO.output(digit[i], 1)
+		if newSw == 1 and oldSw == 0:
+			index[3] += 1
+			if index[3] == 10:
+				index[3] = 0
+				index[2] += 1
+			if index[2] == 10:
+				index[2] = 0
+				index[1] += 1
+			if index[1] == 10:
+				index[1] = 0
+				index[0] += 1
+			if index[0] == 10:
+				index[0] = 0
+			time.sleep(0.2)
+		oldSw = newSw
+
 except KeyboardInterrupt:
 	GPIO.cleanup()
