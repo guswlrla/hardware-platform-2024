@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import RPi.GPIO as GPIO
 import time
+from PyQt5.QtCore import QTimer
 
 # 핀번호 설정
 r_led = 21
@@ -61,10 +62,9 @@ class WindowClass(QMainWindow, form_class):
 		GPIO.output(b_led, 0)
 
 	def pir_on(self):
-		for i in range(30):
-			if GPIO.input(pirPin) == 1:
-				print("Detected!!")
-				time.sleep(0.5)
+		if GPIO.input(pirPin) == 1:
+			print("Detected!!")
+			time.sleep(0.5)
 	def pir_off(self):
 		GPIO.input(pirPin, 0)
 
