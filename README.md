@@ -168,4 +168,11 @@
 비트계산법,,,
 
 GPIO.output(segs[i], nums[1] & (0x01 << i)) 알고리즘 분석
-j반복문 안에서 값을 받아와서 함수 data값을 받아서,,? 전달~
+
+vnc서버구동시키는 명령어
+- vncserver-virtual
+
+ qt 설치
+ sudo apt install qttools5-dev-tools
+
+ 큐티 디자이너에서 이벤트함수 등록하면 코드에서 따로 안해도 ㅗ딤
