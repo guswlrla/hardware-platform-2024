@@ -40,6 +40,7 @@ class WindowClass(QMainWindow, form_class):
 		self.pirBtn1.clicked.connect(self.pir_on) # pir_on
 		self.pirBtn2.clicked.connect(self.pir_off) # pir_off
 
+	# led control
 	def led_on(self):
 		GPIO.output(r_led, 0)
 		GPIO.output(g_led, 1)
@@ -61,6 +62,7 @@ class WindowClass(QMainWindow, form_class):
 		GPIO.output(g_led, 1)
 		GPIO.output(b_led, 0)
 
+	# pir control
 	def pir_on(self):
 		if GPIO.input(pirPin) == 1:
 			print("Detected!!")
