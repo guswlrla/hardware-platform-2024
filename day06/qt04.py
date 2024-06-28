@@ -9,6 +9,8 @@ r_led = 21
 b_led = 20
 g_led = 16
 
+pirPin = 12
+
 form_class = uic.loadUiType("./sensor.ui")[0]
 
 # windowClass
@@ -23,22 +25,48 @@ class WindowClass(QMainWindow, form_class):
 		GPIO.setup(b_led, GPIO.OUT)
 		GPIO.setup(g_led, GPIO.OUT)
 
+		GPIO.setup(pirPin, GPIO.IN)
+
 		# 이벤트 설정
 		# led_event
 		self.ledBtn1.clicked.connect(self.led_on) # led on
 		self.ledBtn2.clicked.connect(self.led_off) # led off
-		self.radBtn1.clicked.connect(self.red_on) # Red LED
+		self.radBtn1.clicked.connect(self.red_on) # Red Color
+		self.radBtn2.clicked.connect(self.green_on) # Green Color
+		self.radBtn3.clicked.connect(self.blue_on) # Blue Color
+
+		# pir_event
+		self.pirBtn1.clicked.connect(self.pir_on) # pir_on
+		self.pirBtn2.clicked.connect(self.pir_off) # pir_off
 
 	def led_on(self):
-		GPIO.output(r_led, False)
-		GPIO.output(g_led, True)
-		GPIO.output(b_led, True)
-		#print("led on!!")
+		GPIO.output(r_led, 0)
+		GPIO.output(g_led, 1)
+		GPIO.output(b_led, 1)
 	def led_off(self):
-		GPIO.output(r_led, True)
-		GPIO.output(g_led, True)
-		GPIO.output(b_led, True)
-		#print("led off!!")
+		GPIO.output(r_led, 1)
+		GPIO.output(g_led, 1)
+		GPIO.output(b_led, 1)
+	def red_on(self):
+		GPIO.output(r_led, 0)
+		GPIO.output(g_led, 1)
+		GPIO.output(b_led, 1)
+	def green_on(self):
+		GPIO.output(r_led, 1)
+		GPIO.output(g_led, 0)
+		GPIO.output(b_led, 1)
+	def blue_on(self):
+		GPIO.output(r_led, 1)
+		GPIO.output(g_led, 1)
+		GPIO.output(b_led, 0)
+
+	def pir_on(self):
+		for i in range(30):
+			if GPIO.input(pirPin) == 1:
+				print("Detected!!")
+				time.sleep(0.5)
+	def pir_off(self):
+		GPIO.input(pirPin, 0)
 
 if __name__ == "__main__":
 	app = QApplication(sys.argv)
