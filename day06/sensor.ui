@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1024</width>
-    <height>600</height>
+    <width>894</width>
+    <height>557</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,96 +19,363 @@
      <rect>
       <x>10</x>
       <y>0</y>
-      <width>290</width>
-      <height>120</height>
+      <width>281</width>
+      <height>141</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Piboto Light</family>
+      <family>나눔스퀘어라운드</family>
       <pointsize>10</pointsize>
      </font>
     </property>
-    <property name="title">
-     <string>LED제어</string>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
     </property>
-    <widget class="QPushButton" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>40</x>
-       <y>50</y>
-       <width>90</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>LED ON</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_2">
-     <property name="geometry">
-      <rect>
-       <x>160</x>
-       <y>50</y>
-       <width>90</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>LED OFF</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>120</y>
-      <width>290</width>
-      <height>120</height>
-     </rect>
+    <property name="acceptDrops">
+     <bool>false</bool>
     </property>
-    <property name="font">
-     <font>
-      <family>Piboto Light</family>
-      <pointsize>10</pointsize>
-     </font>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="title">
-     <string>스위치제어</string>
+     <string>LED Control</string>
     </property>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>121</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어라운드</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="ledBtn1">
+        <property name="font">
+         <font>
+          <family>나눔스퀘어라운드</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>LED ON</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="ledBtn2">
+        <property name="font">
+         <font>
+          <family>나눔스퀘어라운드</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>LED OFF</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>50</y>
+       <width>106</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어라운드</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QRadioButton" name="radBtn1">
+        <property name="font">
+         <font>
+          <family>나눔스퀘어라운드</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Red LED</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radBtn2">
+        <property name="font">
+         <font>
+          <family>나눔스퀘어라운드</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Green Color</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radBtn3">
+        <property name="font">
+         <font>
+          <family>나눔스퀘어라운드</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Blue Color</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_3">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>240</y>
-      <width>290</width>
-      <height>120</height>
+      <x>300</x>
+      <y>0</y>
+      <width>581</width>
+      <height>291</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Piboto Light</family>
+      <family>나눔스퀘어라운드</family>
       <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="title">
-     <string>피에조부저 제어</string>
+     <string>UltraSonic Control</string>
     </property>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>50</y>
+       <width>121</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어라운드</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QPushButton" name="SonicBtn1">
+        <property name="font">
+         <font>
+          <family>나눔스퀘어라운드</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>UltSonic ON</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="SonicBtn2">
+        <property name="font">
+         <font>
+          <family>나눔스퀘어라운드</family>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>UltSonic OFF</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_4">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>440</y>
-      <width>290</width>
-      <height>120</height>
+      <x>10</x>
+      <y>150</y>
+      <width>281</width>
+      <height>141</height>
      </rect>
     </property>
-    <property name="title">
-     <string>GroupBox</string>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드</family>
+      <pointsize>10</pointsize>
+     </font>
     </property>
+    <property name="title">
+     <string>Buzzer Control</string>
+    </property>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>219</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="buzzBtn2">
+        <property name="text">
+         <string>BUZZER OFF</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="buzzBtn1">
+        <property name="text">
+         <string>BUZZER ON</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>305</y>
+      <width>420</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Pir Control</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QTextBrowser" name="txtBro1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>281</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>나눔스퀘어라운드</family>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>40</y>
+       <width>111</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QPushButton" name="pirBtn1">
+        <property name="text">
+         <string>PIR ON</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pirBtn2">
+        <property name="text">
+         <string>PIR OFF</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>305</y>
+      <width>420</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>나눔스퀘어라운드</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>FND Control</string>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QLCDNumber" name="lcdNumber">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>60</y>
+       <width>281</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -116,7 +383,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1024</width>
+     <width>894</width>
      <height>28</height>
     </rect>
    </property>
@@ -125,4 +392,7 @@
  </widget>
  <resources/>
  <connections/>
+ <slots>
+  <slot>ledBtn1Func()</slot>
+ </slots>
 </ui>
