@@ -4,7 +4,10 @@ from PyQt5 import uic
 import RPi.GPIO as GPIO
 import time
 
-led = 21
+# 핀번호 설정
+r_led = 21
+b_led = 20
+g_led = 16
 
 form_class = uic.loadUiType("./sensor.ui")[0]
 
@@ -13,16 +16,28 @@ class WindowClass(QMainWindow, form_class):
 	def __init__(self):
 		super().__init__()
 		self.setupUi(self)
+
+		# GPIO 설정
 		GPIO.setmode(GPIO.BCM)
-		GPIO.setup(led, GPIO.OUT)
+		GPIO.setup(r_led, GPIO.OUT)
+		GPIO.setup(b_led, GPIO.OUT)
+		GPIO.setup(g_led, GPIO.OUT)
 
-		self.ledBtn1.clicked.connect(self.ledBtn1Func)
-		self.ledBtn2.clicked.connect(self.ledBtn2Func)
+		# 이벤트 설정
+		# led_event
+		self.ledBtn1.clicked.connect(self.led_on) # led on
+		self.ledBtn2.clicked.connect(self.led_off) # led off
+		self.radBtn1.clicked.connect(self.red_on) # Red LED
 
-	def ledBtn1Func(self):
-		GPIO.output(led, False)
+	def led_on(self):
+		GPIO.output(r_led, False)
+		GPIO.output(g_led, True)
+		GPIO.output(b_led, True)
 		#print("led on!!")
-	def ledBtn2Func(self):
+	def led_off(self):
+		GPIO.output(r_led, True)
+		GPIO.output(g_led, True)
+		GPIO.output(b_led, True)
 		#print("led off!!")
 
 if __name__ == "__main__":
