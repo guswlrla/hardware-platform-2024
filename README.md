@@ -166,7 +166,7 @@
 ### 1. FND 실습
 - 비트곱연산, 시프트연산을 통해 
 
-	```python
+	```
 	def display(data, sel):
 	for i in range(0, 7):
 		GPIO.output(segs[i], nums[data] & (0x01 << i))
