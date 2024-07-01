@@ -19,7 +19,7 @@ trigPin = 19
 echoPin = 13
 
 digits = [18, 22, 27, 17]
-segs = [5, 6, 23, 24, 25, 4, 21]
+segs = [5, 6, 23, 24, 25, 4, 29] # 맨마지막 핀 21로 바꾸기...
 nums = [0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f]
 count = 0
 
@@ -36,6 +36,9 @@ class WindowClass(QMainWindow, form_class):
 		GPIO.setup(r_led, GPIO.OUT)
 		GPIO.setup(b_led, GPIO.OUT)
 		GPIO.setup(g_led, GPIO.OUT)
+		GPIO.output(r_led, 1)
+		GPIO.output(g_led, 1)
+		GPIO.output(b_led, 1)
 
 		GPIO.setup(pirPin, GPIO.IN)
 
@@ -114,8 +117,8 @@ class WindowClass(QMainWindow, form_class):
 	# led control
 	def led_on(self):
 		GPIO.output(r_led, 0)
-		GPIO.output(g_led, 1)
-		GPIO.output(b_led, 1)
+		GPIO.output(g_led, 0)
+		GPIO.output(b_led, 0)
 	def led_off(self):
 		GPIO.output(r_led, 1)
 		GPIO.output(g_led, 1)
