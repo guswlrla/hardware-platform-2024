@@ -114,7 +114,7 @@
 	- port : 포트번호 수정
 	- debug=True : 코드 수정마다 flask 변경된 걸 인식하고 다시 시작
 
-	```python
+	```
 	from flask import Flask
 	app = Flask(__name__)
 
@@ -127,7 +127,7 @@
 	```
 - 정적라우팅
 
-	```python
+	```
 	@app.route("/name")
 	def name():
 		return "<h1>My name is Kim Hyeon Ji!!</h1>"
@@ -181,7 +181,7 @@
 - sudo apt install qttools5-dev-tools : qt설치
 - 기본코드
 
-	```python
+	```
 	import sys
 	from PyQt5.QtWidgets import *
 
