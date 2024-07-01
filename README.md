@@ -161,6 +161,25 @@
 
 ## :white_check_mark:5일차
 ### 1. FND 실습
+- 불을 계속 키는게 아닌, 짧은 시간에 껐다 켰다 반복해서 화면에 띄우는 원리
+- 각 자릿수가 10이 되면 다음 자릿수를 1씩 증가시키는 알고리즘
+	```
+	if newSw == 1 and oldSw == 0:
+			index[3] += 1
+			if index[3] == 10:
+				index[3] = 0
+				index[2] += 1
+			if index[2] == 10:
+				index[2] = 0
+				index[1] += 1
+			if index[1] == 10:
+				index[1] = 0
+				index[0] += 1
+			if index[0] == 10:
+				index[0] = 0
+			time.sleep(0.2)
+		oldSw = newSw
+	```
 
 ## :white_check_mark:6일차
 ### 1. FND 실습
