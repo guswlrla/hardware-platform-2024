@@ -144,37 +144,36 @@
 - 7개의 led를 이용하여 숫자나 문자를 표시하는 부품, 세븐세그먼트(7-Segment)라고도 부름
 	- COM1 ~ COM4 : FND를 선택하는 단자
 	- a~g핀, dp핀 : 각 7개의 led를 의미
-- 공통 캐소드형(Common Cathod)
-	- 각 led의 캐소드(-) 단자들이 공통으로 묶여있으므로 COM은 **gnd**에 연결
-	- 데이터 신호인 a~g, dp에 output값 1을 주면 불이 켜짐
-
-	![cathod](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/cathod.png)
-
-- 공통 애노드형(Common Anode)
-	- 각 led의 애노드(+) 단자들이 공통으로 묶여있으므로 COM은 **vcc**에 연결
-	- 데이터 신호인 a~g, dp에 output값 0을 주면 불이 켜짐
-
-	![anode](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/anode.png)
-
-- 외형으로 타입을 구분할 수 없으므로 데이터시트로 확인
-- 캐소드타입인지 애노드타입인지에 따라 16진수도 달라지고 회로도 달라짐
+- 내부 회로별 타입
+	- 공통 캐소드형(Common Cathod)
+		- 각 led의 캐소드(-) 단자들이 공통으로 묶여있으므로 COM은 **gnd**에 연결
+		- 데이터 신호인 a~g, dp에 output값 1을 주면 불이 켜짐
+		<!-- ![cathod](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/cathod.png) -->
+	- 공통 애노드형(Common Anode)
+		- 각 led의 애노드(+) 단자들이 공통으로 묶여있으므로 COM은 **vcc**에 연결
+		- 데이터 신호인 a~g, dp에 output값 0을 주면 불이 켜짐
+		<!-- ![anode](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/anode.png) -->
+	- 외형으로 타입을 구분할 수 없으므로 데이터시트로 확인
+	- 캐소드타입인지 애노드타입인지에 따라 16진수도 달라지고 회로도 달라짐
+	
+	[type](https://raw.githubusercontent.com/guswlrla/hardware-platform-2024/main/images/cath_anode.jpg)
 
 ## :white_check_mark:5일차
 ### 1. FND 실습
 
 ## :white_check_mark:6일차
 ### 1. FND 실습
-- 비트곱연산, 시프트연산을 통해 
+- 비트곱연산, 시프트연산을 통해 하나의 숫자 형태를 만듦
 
 	```
 	def display(data, sel):
-	for i in range(0, 7):
-		GPIO.output(segs[i], nums[data] & (0x01 << i))
-		for j in range(0, 4):
-			if j == sel:
-				GPIO.output(digits[j], 0)
-			else:
-				GPIO.output(digits[j], 1)
+		for i in range(0, 7):
+			GPIO.output(segs[i], nums[data] & (0x01 << i))
+			for j in range(0, 4):
+				if j == sel:
+					GPIO.output(digits[j], 0)
+				else:
+					GPIO.output(digits[j], 1)
 	```
 ### 2. PyQt5 사용
 - vncserver-virtual : vnc 서버구동 시키는 명령어
