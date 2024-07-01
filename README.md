@@ -160,10 +160,10 @@
 - 캐소드타입인지 애노드타입인지에 따라 16진수도 달라지고 회로도 달라짐
 
 ## :white_check_mark:5일차
-### 1. FND 실습②
+### 1. FND 실습
 
 ## :white_check_mark:6일차
-### 1. FND 실습③
+### 1. FND 실습
 - 비트곱연산, 시프트연산을 통해 
 
 	```python
@@ -179,6 +179,17 @@
 ### 2. PyQt5 사용
 - vncserver-virtual : vnc 서버구동 시키는 명령어
 - sudo apt install qttools5-dev-tools : qt설치
+- 기본코드
+
+	```python
+	import sys
+	from PyQt5.QtWidgets import *
+
+	app = QApplication(sys.argv)
+	mywindow = WindowClass()
+	mywindow.show()
+	app.exec_()
+	```
 - 이벤트 함수등록
 	- Qt Designer에서 이벤트함수를 등록하면 코드에 따로 안적어도 됨
 
