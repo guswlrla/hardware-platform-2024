@@ -160,19 +160,27 @@
 - 캐소드타입인지 애노드타입인지에 따라 16진수도 달라지고 회로도 달라짐
 
 ## :white_check_mark:5일차
-### 1. 
+### 1. FND 실습②
 
 ## :white_check_mark:6일차
-### 1. 
-관계연산자 시프트연산자... 알기
-비트계산법,,,
+### 1. FND 실습③
+- 비트곱연산, 시프트연산을 통해 
 
-GPIO.output(segs[i], nums[1] & (0x01 << i)) 알고리즘 분석
+	```python
+	def display(data, sel):
+	for i in range(0, 7):
+		GPIO.output(segs[i], nums[data] & (0x01 << i))
+		for j in range(0, 4):
+			if j == sel:
+				GPIO.output(digits[j], 0)
+			else:
+				GPIO.output(digits[j], 1)
+	```
+### 2. PyQt5 사용
+- vncserver-virtual : vnc 서버구동 시키는 명령어
+- sudo apt install qttools5-dev-tools : qt설치
+- 이벤트 함수등록
+	- Qt Designer에서 이벤트함수를 등록하면 코드에 따로 안적어도 됨
 
-vnc서버구동시키는 명령어
-- vncserver-virtual
-
- qt 설치
- sudo apt install qttools5-dev-tools
-
- 큐티 디자이너에서 이벤트함수 등록하면 코드에서 따로 안해도 ㅗ딤
+## :white_check_mark:7일차
+### 1. 개인프로젝트
