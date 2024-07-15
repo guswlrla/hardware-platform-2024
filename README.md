@@ -68,7 +68,6 @@
 	- 객체.start(duty비)
 		- duty비 : Duty Cycle %단위로서의 0~100 사이 숫자 입력
 - 객체.ChangeFreqeuncy(주파수)
-- [-]인터럽트랑 스위치 파일 수정!
 
 ## :white_check_mark:2일차
 ### 1. 파이썬 가상환경 설정
@@ -214,4 +213,12 @@
 	- Qt Designer에서 이벤트함수를 등록하면 코드에 따로 안적어도 됨
 
 ## :white_check_mark:7일차
-### 1. 개인프로젝트
+### 1. 미니프로젝트
+- PyQt5를 이용하여 센서 제어(final.py)
+- 피에조 부저가 울리면 다른 버튼 제어 불가능...(보완할 것)
+
+https://github.com/user-attachments/assets/3ffc702e-b602-4e26-87f6-59146369710d
+
+
+
+
