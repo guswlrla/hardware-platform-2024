@@ -12,11 +12,11 @@ try:
 	while True:
 		if GPIO.input(pirPin) == True:
 			GPIO.output(led, False)
-			print("인체감지!!")
-			time.sleep(0.5)
+			print("Detected!!")
+			time.sleep(0.3)
 		else:
 			GPIO.output(led, True)
-			time.sleep(0.5)
+			time.sleep(0.3)
 
 except KeyboardInterrupt:
 	GPIO.cleanup()
