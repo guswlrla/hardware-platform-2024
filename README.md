@@ -215,3 +215,9 @@
 
 ## :white_check_mark:7일차
 ### 1. 미니프로젝트
+
+https://github.com/user-attachments/assets/5b189157-958a-4ca9-902a-3647887fc7b1
+
+
+
+
