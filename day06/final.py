@@ -6,7 +6,7 @@ import time
 from PyQt5.QtCore import QTimer
 
 # 핀번호 설정
-r_led = 21
+r_led = 29
 b_led = 20
 g_led = 16
 
@@ -19,7 +19,7 @@ trigPin = 19
 echoPin = 13
 
 digits = [18, 22, 27, 17]
-segs = [5, 6, 23, 24, 25, 4, 29] # 맨마지막 핀 21로 바꾸기...
+segs = [5, 6, 23, 24, 25, 4, 21] # 맨마지막 핀 21로 바꾸기...
 nums = [0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,0x7f,0x6f]
 count = 0
 
