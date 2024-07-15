@@ -214,7 +214,7 @@
 
 ## :white_check_mark:7일차
 ### 1. 미니프로젝트
-- PyQt5를 이용하여 센서 제어
+- PyQt5를 이용하여 센서 제어(final.py)
 - 피에조 부저가 울리면 다른 버튼 제어 불가능...(보완할 것)
 
 https://github.com/user-attachments/assets/3ffc702e-b602-4e26-87f6-59146369710d
