@@ -13,26 +13,30 @@ GPIO.setup(b_pin, GPIO.OUT)
 GPIO.setup(switch, GPIO.IN)
 
 index = 0
-last_state = GPIO.input(switch)
+old_state = GPIO.input(switch)
 
 try:
 	while True:
-		if GPIO.input(switch) == True:
-			if i == 1:
+		new_state = GPIO.input(switch)
+		if old_state == GPIO.HIGH and new_state == GPIO.LOW:
+			if index == 0:
 				GPIO.output(r_pin, False)
 				GPIO.output(g_pin, True)
 				GPIO.output(b_pin, True)
-				i = 2
-			elif i == 2:
+				index = 1
+			elif index == 1:
 				GPIO.output(r_pin, True)
 				GPIO.output(g_pin, False)
 				GPIO.output(b_pin, True)
-				i = 3
-			elif i == 3:
+				index = 2
+			elif index == 2:
 				GPIO.output(r_pin, True)
 				GPIO.output(g_pin, True)
 				GPIO.output(b_pin, False)
-				i = 0
+				index = 0
+
+		old_state = new_state
+		time.sleep(0.1)
 
 except KeyboardInterrupt:
 	GPIO.cleanup()

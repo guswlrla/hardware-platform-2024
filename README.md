@@ -68,7 +68,6 @@
 	- 객체.start(duty비)
 		- duty비 : Duty Cycle %단위로서의 0~100 사이 숫자 입력
 - 객체.ChangeFreqeuncy(주파수)
-- [-]인터럽트랑 스위치 파일 수정!
 
 ## :white_check_mark:2일차
 ### 1. 파이썬 가상환경 설정
