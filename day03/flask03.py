@@ -31,4 +31,4 @@ def cleanup():
 	return "쓱싹쓱싹"
 
 if __name__ == "__main__":
-	app.run(host = "0.0.0.0", port = "10011", debug = True)
+	app.run(host = "0.0.0.0", port = "10201", debug = True)
